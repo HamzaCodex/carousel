@@ -1,0 +1,128 @@
+/* Base Styles */
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .searchbutton {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .searchbutton:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  #search:focus {
+    box-shadow: 0 0 5px 2px rgba(255, 0, 0, 0.6); /* Red glow */
+    border-color: rgba(255, 0, 0, 0.6); /* Matching border color */
+    outline: none;
+  }
+  
+  .navbar-custom {
+    background-color: white;
+    height: 90px;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablet and smaller devices */
+  @media (max-width: 992px) {
+    .navbar-custom {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 10px;
+    }
+  
+    .navbar-brand img {
+      width: 90px; /* Adjust logo size */
+    }
+  
+    .nav-link {
+      font-size: 16px; /* Slightly reduce font size */
+    }
+  
+    .searchbutton {
+      padding: 6px 12px;
+    }
+  
+    .carousel-caption {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 768px) {
+    .navbar-custom {
+      padding: 5px;
+    }
+  
+    .navbar-brand img {
+      width: 80px; /* Further reduce logo size */
+    }
+  
+    .nav-link {
+      font-size: 14px; /* Further reduce font size */
+    }
+  
+    .searchbutton {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+  
+    .carousel-item img {
+      height: 60vh; /* Adjust carousel image height */
+      object-fit: cover; /* Make sure images fill the space */
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Extra small devices (like small smartphones) */
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      width: 70px; /* Further reduce logo size */
+    }
+  
+    .nav-link {
+      font-size: 12px; /* Smaller font size */
+    }
+  
+    .carousel-item img {
+      height: 50vh; /* Further adjust carousel image height */
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1rem; /* Smaller caption size */
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  
+    .searchbutton {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+  
